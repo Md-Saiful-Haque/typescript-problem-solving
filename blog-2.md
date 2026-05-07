@@ -12,7 +12,7 @@ This approach follows the **DRY (Don't Repeat Yourself)** principle by reducing 
 
 ---
 
-# Understanding the DRY Principle
+## Understanding the DRY Principle
 
 DRY means:
 
@@ -24,7 +24,7 @@ Utility types solve this problem by reusing existing types.
 
 ---
 
-# `Pick` Utility Type
+## `Pick` Utility Type
 
 `Pick` creates a new type by selecting specific properties from another interface.
 
