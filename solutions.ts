@@ -1,4 +1,4 @@
-// Problem 1: Create a TypeScript function filterEvenNumbers that accepts an array of numbers and returns a new array containing only the even numbers.
+// Problem 1
 
 const filterEvenNumbers = (numbers: number[]): number[] => {
     return numbers.filter((num) => num % 2 === 0);
@@ -6,7 +6,7 @@ const filterEvenNumbers = (numbers: number[]): number[] => {
 
 
 
-// Problem 2: Write a function reverseString that takes a string as input and returns the reversed version of that string.
+// Problem 2
 
 const reverseString = (isReverse: string): string => {
     return isReverse.split("").reverse().join("")
@@ -14,7 +14,7 @@ const reverseString = (isReverse: string): string => {
 
 
 
-// Problem 3: Define a union type StringOrNumber and create a function checkType that uses type guards to return "String" if the input is a string or "Number" if the input is a number.
+// Problem 3
 
 type StringOrNumber = string | number;
 
@@ -29,7 +29,7 @@ const checkType = (value: StringOrNumber) => {
 
 
 
-// Problem 4: Write a generic function getProperty that takes an object and a key, then returns the value of that key. Use constraints to ensure the key exists on the object.
+// Problem 4
 
 const getProperty = <T, K extends keyof T>(obj: T, key: K): T[K] => {
     return obj[key];
@@ -39,7 +39,7 @@ const user = { id: 1, name: "John Doe", age: 21 };
 
 
 
-// Problem 5:Define an interface Book with properties title, author, and publishedYear. Create a function toggleReadStatus that accepts a Book object and returns a new object with an added isRead property (boolean), defaulting to true.
+// Problem 5
 
 interface Book {
     title: string;
@@ -62,7 +62,7 @@ const myBook = {
 
 
 
-// Problem 6:Create a class Person with a name and age. Then, create a subclass Student that adds a grade property. Include a method getDetails in the Student class that returns a string with the student's name, age, and grade.
+// Problem 6
 
 class Person {
   name: string;
@@ -92,7 +92,7 @@ const student = new Student("Alice", 20, "A");
 
 
 
-// Problem 7: Create a function getIntersection that takes two arrays of numbers and returns a new array containing only the elements that are present in both arrays.
+// Problem 7
 
 const getIntersection = (arr1: number[], arr2: number[]): number[] => {
     return arr1.filter((num) => arr2.includes(num));
